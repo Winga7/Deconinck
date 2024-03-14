@@ -1,0 +1,16 @@
+body{
+    background-image: url(/images/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    min-width: 50rem;
+}
+nav{
+    text-align: center;
+}
+nav ul li{
+    display: inline-flex;
+}
+nav ul li a{
+    color: red;
+    text-decoration: none;
+}
