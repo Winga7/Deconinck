@@ -72,6 +72,9 @@ main p#catalogue{
     font-weight: bold;
     letter-spacing: normal;
 }
+main p#catalogue::first-letter{
+    letter-spacing: -0.2em;
+}
 main#classique p{
     padding: 0.5em 0em 2em 0em;
 }
@@ -92,6 +95,14 @@ main table td img{
     margin: 0 2em;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.45);
 }
+main#contact p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.15em;
+    color: dimgray;
+    padding: 1em;
+    text-align: center;
+}
 footer{
     text-align: center;
     margin-top: 1.5rem;
@@ -109,7 +120,40 @@ footer p{
     margin-top: 1.25rem;
     color: firebrick;
 }
+fieldset{
+    border: 1px solid firebrick;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1.4em;
+}
+fieldset .coordonnees div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0.4em;
+}
+textarea{
+    width: 100%;
+    resize: both;
+    max-width: 800px;
+    max-height: 400px;
+}
 legend{
     font-family: "Montserrat", sans-serif;
     color: firebrick;
 }
+button[type="submit"]{
+    background-color: rgb(50, 50, 50);
+    border-radius: 1em;
+    padding: 0.5em 0.8em;
+    color: white;
+}
+button[type="submit"]:hover, button[type="submit"]:focus{
+    color: red ;
+    cursor: pointer;
+}
+iframe {
+    width: 100%;
+    margin-top: 2em;
+}
+
+
