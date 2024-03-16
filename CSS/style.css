@@ -73,7 +73,12 @@ main p#catalogue{
     letter-spacing: normal;
 }
 main#classique p{
-    padding: 1em 1em;
+    padding: 0.5em 0em 2em 0em;
+}
+main#classique p::first-letter{
+    color: firebrick;
+    text-transform: capitalize;
+    font-size: 3em;
 }
 main table tr:nth-child(2n) td{
     padding: 1em;
