@@ -31,7 +31,6 @@ nav ul li a{
     text-decoration: none;
     font-family: "Roboto", sans-serif;
 }
-/* le :after est là pour empecher qu'au survol les boutons bouge et se superpose */
 nav ul li :hover, nav ul li:focus{
     left: 0;
     width: 100%;
@@ -49,16 +48,18 @@ header figure img{
 }
 main{
     border: 1px solid firebrick;
-    padding: 1em;
+    padding: 1em 1em;
     max-width: 850px;
     background-color: rgba(244, 244, 244, 0.728);
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
+    text-align: justify;
 }
 main h1 {
     font-size: 1.87rem;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+    padding-bottom: 0.5em;
 }
 main#new p::first-letter {
     font-size: 3em;
@@ -71,11 +72,18 @@ main p#catalogue{
     font-weight: bold;
     letter-spacing: normal;
 }
-main table th{
+main#classique p{
+    padding: 1em 1em;
+}
+main table tr:nth-child(2n) td{
+    padding: 1em;
+}
+main table td{
     text-align: center;
     border: 1px solid black;
+    vertical-align: middle;
 }
-main table th img{
+main table td img{
     margin: 0 2em;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.45);
 }
