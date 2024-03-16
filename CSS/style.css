@@ -1,16 +1,66 @@
 body{
     background-image: url(/images/fond.jpg);
     background-repeat: no-repeat;
-    background-size: 115%;
-    min-width: 50rem;
+    background-size: cover;
+    min-height: 100vh;
 }
-nav{
+header{
+    margin: 0 auto;
+    width: 100%;
+}
+header figure{
     text-align: center;
 }
+header figure img{
+    width: 38.7rem;
+}
+nav{
+    background-color: rgba(30, 24, 24, 0.76);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
 nav ul li{
-    display: inline-flex;
+    padding: 0.938rem 1.25rem;
+    position: relative;
 }
 nav ul li a{
-    color: red;
+    color: white;
     text-decoration: none;
+}
+/* le :after est là pour empecher qu'au survol les boutons bouge et se superpose */
+nav ul li :hover:after, nav ul li:focus:after{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+header figure {
+    margin: 0 auto;
+    width: 100%;
+}
+header figure img{
+    width: 43.5 rem ; 
+    cursor: pointer;
+}
+main{
+    border: 1px solid firebrick;
+    padding: 1em;
+    max-width: 850px;
+    background-color: rgba(244, 244, 244, 0.728);
+    margin: 0 auto;
+}
+main h1 {
+    font-size: 1.87rem;
+}
+main#new p::first-letter {
+    font-size: 3em;
+    color: firebrick;
+    text-transform: capitalize;
+}
+footer{
+    text-align: center;
+    margin-top: 1.5rem;
 }
