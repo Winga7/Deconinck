@@ -83,6 +83,9 @@ main#classique p::first-letter{
     text-transform: capitalize;
     font-size: 3em;
 }
+main#contact h1{
+    font-family: "Montez", cursive;
+}
 main table tr:nth-child(2n) td{
     padding: 1em;
 }
