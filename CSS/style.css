@@ -15,6 +15,7 @@ header figure{
 }
 header figure img{
     width: 38.7rem;
+    vertical-align: middle;
 }
 nav{
     background-color: rgba(30, 24, 24, 0.76);
